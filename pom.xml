@@ -6,7 +6,19 @@
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>dev</name>
-  <url>http://maven.apache.org</url>
+ 
+  <repositories>
+    <repository>
+      <id>my-repo1</id>
+      <name>your custom repo</name>
+      <url>http://ip-172-31-93-111.ec2.internal:8081/nexus/content/groups/private/</url>
+    </repository>
+    <repository>
+      <id>my-repo2</id>
+      <name>your custom repo</name>
+      <url>http://maven.apache.org</url>
+    </repository>
+  </repositories>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -20,7 +32,7 @@
       <uniqueVersion>false</uniqueVersion>
       <id>dev-releases</id>
       <name>dev-releases</name>
-      <urlhttp://ec2-3-80-202-216.compute-1.amazonaws.com:8081/nexus/content/repositories/dev-releases/</url>
+      <url>http://ip-172-31-93-111.ec2.internal:8081/nexus/content/repositories/dev-releases/</url>
       <layout>default</layout>
     </repository>
     <snapshotRepository>
