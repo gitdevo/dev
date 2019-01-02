@@ -18,16 +18,17 @@
   <distributionManagement>
     <repository>
       <uniqueVersion>false</uniqueVersion>
-      <id>corp1</id>
-      <name>Corporate Repository</name>
-      <url>scp://repo/maven2</url>
+      <id>dev-releases</id>
+      <name>dev-releases</name>
+      <urlhttp://ec2-3-80-202-216.compute-1.amazonaws.com:8081/nexus/content/repositories/dev-releases/</url>
       <layout>default</layout>
     </repository>
     <snapshotRepository>
       <uniqueVersion>true</uniqueVersion>
-      <id>propSnap</id>
-      <name>Propellors Snapshots</name>
-      <url>sftp://propellers.net/maven</url>
+      <id>dev-snapshots</id>
+      <name>dev-snapshots</name>
+      <url>http://ec2-3-80-202-216.compute-1.amazonaws.com:8081/nexus/content/repositories/dev-snapshots/</url>
       <layout>legacy</layout>
     </snapshotRepository>
+    </distributionManagement>
 </project>
